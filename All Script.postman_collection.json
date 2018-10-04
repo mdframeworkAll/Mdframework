@@ -1,0 +1,99 @@
+{
+	"info": {
+		"_postman_id": "533b3bf0-7a46-4b7b-87fa-a103cbcdfa16",
+		"name": "All Script",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Getpatient",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"Action\":\"GetPatient\",\"Appname\":\"MedicalDesignTechnologies.MDCoder.TestApp\",\"AppUserID\":\"jmedici\",\"PatientID\":\"39\",\"Token\":\"{{token}}\",\"Parameter1\":\"\",\"Parameter2\":\"\",\"Parameter3\":\"\",\"Parameter4\":\"\",\"Parameter5\":\"\",\"Parameter6\":\"\",\"Data\":\"null\"}\r\n"
+				},
+				"url": "http://tw115dev-azure.unitysandbox.com/Unity/unityservice.svc/json/MagicJson"
+			},
+			"response": []
+		},
+		{
+			"name": "GetChangedPatients",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"Action\":\"GetChangedPatients\",\"Appname\":\"MedicalDesignTechnologies.MDCoder.TestApp\",\"AppUserID\":\"jmedici\",\"PatientID\":\"39\",\"Token\":\"{{token}}\",\"Parameter1\":\"9/17/2018 12:00:01 AM\",\"Parameter2\":\"\",\"Parameter3\":\"\",\"Parameter4\":\"\",\"Parameter5\":\"\",\"Parameter6\":\"\",\"Data\":\"null\"}\r\n"
+				},
+				"url": "http://tw115dev-azure.unitysandbox.com/Unity/unityservice.svc/json/MagicJson"
+			},
+			"response": []
+		},
+		{
+			"name": "SavePatient",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"Action\":\"SavePatient\",\"Appname\":\"MedicalDesignTechnologies.MDCoder.TestApp\",\"AppUserID\":\"jmedici\",\"PatientID\":\"39\",\"Token\":\"068E2C1D-C19C-4A0A-8D0E-291F14070DA1\",\"Parameter1\":\"\",\"Parameter2\":\"{\\\"patient\\\":{\\\"patientID\\\":\\\"39\\\",\\\"lastName\\\":\\\"Collections\\\",\\\"firstName\\\":\\\"Charan\\\",\\\"mi\\\":\\\"\\\",\\\"suffix\\\":\\\"\\\",\\\"gender\\\":\\\"F\\\",\\\"ssn\\\":\\\"555555555\\\",\\\"dob\\\":\\\"1980-01-25\\\",\\\"street1\\\":\\\"123 Blue Street\\\",\\\"street2\\\":\\\"Apartment 321\\\",\\\"city\\\":\\\"Santa Clara\\\",\\\"state\\\":\\\"CA\\\",\\\"zip\\\":\\\"99999\\\",\\\"phone\\\":\\\"3122345467\\\",\\\"workphone\\\":\\\"2125551212\\\",\\\"workphoneext\\\":\\\"1234\\\",\\\"cellphone\\\":\\\"2127771212\\\",\\\"email\\\":\\\"test@example.com\\\",\\\"ethnicity\\\":\\\"Not Hispanic / Latino\\\",\\\"language\\\":\\\"Swahili\\\",\\\"race\\\":\\\"American Indian/Alaska Native\\\",\\\"maritalstatus\\\":\\\"X\\\",\\\"HIPAAStmtExp\\\":\\\"5/5/2020\\\",\\\"usualprov\\\":\\\"MARFEE\\\",\\\"referringdr\\\":\\\"MARFEE\\\",\\\"pcp\\\":\\\"MARFEE\\\",\\\"employer\\\":\\\"AHS\\\",\\\"employmentstatus\\\":\\\"\\\",\\\"studentstatus\\\":\\\"\\\",\\\"IsGuarantor\\\":\\\"\\\",\\\"RelationToGuarantor\\\":\\\"\\\",\\\"IsEmergencyContact\\\":\\\"\\\",\\\"EmergencyContactRelation\\\":\\\"\\\"}}\",\"Parameter3\":\"\",\"Parameter4\":\"\",\"Parameter5\":\"\",\"Parameter6\":\"\",\"Data\":\"null\"}\r\n"
+				},
+				"url": "http://tw115dev-azure.unitysandbox.com/Unity/unityservice.svc/json/MagicJson"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Auth",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"Username\":\"Medic-6107-MDCoder-test\",\"Password\":\"M%7#c@L9%S8gNtbChn0lbG#7Sm3C!1\"}"
+				},
+				"url": "http://tw115dev-azure.unitysandbox.com/Unity/unityservice.svc/json/GetToken"
+			},
+			"response": []
+		},
+		{
+			"name": "SaveCharge",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"Action\":\"GetUserAuthentication\",\"Appname\":\"MedicalDesignTechnologies.MDCoder.TestApp\",\"AppUserID\":\"jmedici\",\"PatientID\":\"\",\"Token\":\"1C76B4C3-67AC-44BE-A624-41C874E5FCF1\",\"Parameter1\":\"password01\",\"Parameter2\":\"\",\"Parameter3\":\"\",\"Parameter4\":\"\",\"Parameter5\":\"\",\"Parameter6\":\"\",\"Data\":\"null\"}\r\n"
+				},
+				"url": "http://tw115dev-azure.unitysandbox.com/Unity/unityservice.svc/json/MagicJson"
+			},
+			"response": []
+		}
+	]
+}
